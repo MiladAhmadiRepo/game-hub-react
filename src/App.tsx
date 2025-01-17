@@ -1,4 +1,5 @@
 import {Navbar} from "./components/navbar.tsx";
+import {GameGrid} from "./components/GameGrid.tsx";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
             <div className=" md:block md:col-span-2 hidden " id="nav"><Navbar></Navbar></div>
             {/* Second Row with 2 Columns*/}
             <div className="  dark:text-primary   text-primary-dark " id="aside">Aside</div>
-            <div className=" dark:text-primary   text-primary-dark " id="mian">Main</div>
+            <div className=" dark:text-primary   text-primary-dark " id="mian"><GameGrid></GameGrid></div>
 
         </div>
 
