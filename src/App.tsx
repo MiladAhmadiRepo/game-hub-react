@@ -1,7 +1,7 @@
 import {Navbar} from "./components/navbar.tsx";
 import {GameGrid} from "./components/GameGrid.tsx";
 
-function App() {
+function  App() {
     return (
         <div className=" bg-primary dark:bg-primary-dark    grid grid-cols-6 md:grid-cols-12  ">
             {/*First Row with 1 Column (Hidden on Tablet and Smaller Screens) */}

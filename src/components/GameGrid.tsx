@@ -1,7 +1,6 @@
 // @flow
 import UseGames from '../hook/UseGames.ts';
 import {GameCard} from "./GameCard.tsx";
-import React from "react";
 
 
 export function GameGrid() {
