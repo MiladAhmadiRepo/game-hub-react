@@ -24,7 +24,7 @@ export function PlatformIconList({platforms}: Props) {
         "macOS": <FaApple style={styleIcon} size={20}/>
     };
     return (
-        <div className="flex flex-row space-x-2  gray-900 ">
+        <div className="flex flex-row space-x-2   ">
             {
                 platforms.map((platform) => {
                     return iconMap[platform.slug] as any

@@ -2,7 +2,6 @@
 import UseGames from '../hook/UseGames.ts';
 import {GameCard} from "./GameCard.tsx";
 import GameCardSkeleton from "./GameCardSkeleton.tsx";
-import {GameCardContainer} from "./GameCardContainer.tsx";
 
 
 export function GameGrid() {
@@ -14,15 +13,15 @@ export function GameGrid() {
                 className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-1 md:gap-1 lg:gap-1 xl:gap-1">
                 {
                     isLoading && skeletons.map((skeleton) => {
-                        return <GameCardContainer> <GameCardSkeleton key={skeleton}></GameCardSkeleton></GameCardContainer>;
+                        return <GameCardSkeleton key={skeleton}></GameCardSkeleton>;
                     })
                 }
             </div>
-            error && <text>{error}</text>
+            {error && <text>{error}</text>}
             <div
                 className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-1 md:gap-1 lg:gap-1 xl:gap-1">
                 {games.map((gameItem) => {
-                    return <GameCardContainer><GameCard game={gameItem}></GameCard></GameCardContainer>
+                    return <GameCard game={gameItem}></GameCard>
                 })}
             </div>
         </>
