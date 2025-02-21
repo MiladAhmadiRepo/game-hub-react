@@ -14,7 +14,7 @@ export function GameGrid() {
                 className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-1 md:gap-1 lg:gap-1 xl:gap-1">
                 {
                     isLoading && skeletons.map((skeleton) => {
-                        return <GameCardContainer> <GameCardSkeleton key={skeleton}></GameCardSkeleton></GameCardContainer>;
+                        return <GameCardContainer key={skeleton}> <GameCardSkeleton key={skeleton}></GameCardSkeleton></GameCardContainer>;
                     })
                 }
             </div>
@@ -22,7 +22,7 @@ export function GameGrid() {
             <div
                 className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-1 md:gap-1 lg:gap-1 xl:gap-1">
                 {data.map((gameItem) => {
-                    return <GameCardContainer><GameCard game={gameItem}></GameCard></GameCardContainer>
+                    return <GameCardContainer key={gameItem.id} ><GameCard  game={gameItem}></GameCard></GameCardContainer>
                 })}
             </div>
         </>

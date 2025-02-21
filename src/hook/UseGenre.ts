@@ -1,11 +1,11 @@
 import useData from "./UseData.ts";
-import {Game} from "./UseGames.ts";
 
 export interface Genre {
     id :number
-    name : string
+    name : string,
+    image_background : string
 }
 
 
-const UseGenres = () => useData<Game>('/genres');
+const UseGenres = () => useData<Genre>('/genres');
 export default UseGenres

@@ -13,15 +13,15 @@ export function PlatformIconList({platforms}: Props) {
     const styleIcon  = { color: "gray"}
 
     const iconMap: { [key: string]: object } = {
-        "playstation": <FaPlaystation style={styleIcon} size={20}/>,
-        "xbox": <FaXbox style={styleIcon} size={20}/>,
-        "pc": <FaWindows style={styleIcon} size={20}/>,
-        "ios": <MdPhoneIphone style={styleIcon} size={20}/>,
-        "android": <FaAndroid style={styleIcon} size={20}/>,
-        "linux": <FaLinux style={styleIcon} size={20}/>,
-        "nintendo": <SiNintendo style={styleIcon} size={20}/>,
-        "web": <BsGlobe style={styleIcon} size={20}/>,
-        "macOS": <FaApple style={styleIcon} size={20}/>
+        "playstation": <FaPlaystation  style={styleIcon} size={20} key={"playstation"}/>,
+        "xbox": <FaXbox style={styleIcon} size={20} key={"xbox"}/>,
+        "pc": <FaWindows style={styleIcon} size={20} key={"pc"}/>,
+        "ios": <MdPhoneIphone style={styleIcon} size={20} key={"ios"}/>,
+        "android": <FaAndroid style={styleIcon} size={20} key={"android"}/>,
+        "linux": <FaLinux style={styleIcon} size={20} key={"linux"}/>,
+        "nintendo": <SiNintendo style={styleIcon} size={20} key={"nintendo"}/>,
+        "web": <BsGlobe style={styleIcon} size={20} key={"web"}/>,
+        "macOS": <FaApple style={styleIcon} size={20} key={"macOS"}/>
     };
     return (
         <div className="flex flex-row space-x-2   ">

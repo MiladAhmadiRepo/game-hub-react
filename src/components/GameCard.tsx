@@ -12,7 +12,7 @@ export function GameCard({game}: Props) {
         <div>
             <img className="rounded-t-lg " src={getCroppedImageUrl(game.background_image)} alt=""/>
             <div className="p-5">
-                <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{game.name}</h5>
+                <h5 className="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">{game.name}</h5>
             </div>
             <div className="p-5 flex flex-row justify-between items-center">
                 <PlatformIconList platforms={game.parent_platforms.map((p)=>p.platform)}>
