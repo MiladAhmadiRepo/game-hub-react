@@ -9,8 +9,7 @@ type Props = {
 
 export function GameCard({game}: Props) {
     return (
-        <div
-            className="m-5 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div>
             <img className="rounded-t-lg " src={getCroppedImageUrl(game.background_image)} alt=""/>
             <div className="p-5">
                 <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">{game.name}</h5>
@@ -20,7 +19,7 @@ export function GameCard({game}: Props) {
                 </PlatformIconList>
                 <CriticScore score={game.metacritic}></CriticScore>
             </div>
-            <div></div>
+
         </div>
     );
 };
