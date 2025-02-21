@@ -6,7 +6,7 @@ import {GameCardContainer} from "./GameCardContainer.tsx";
 
 
 export function GameGrid() {
-    const {games, error, isLoading} = UseGames();
+    const {data, error, isLoading} = UseGames();
     const skeletons = [1, 2, 3, 4, 5, 6,7,8,9,10];
     return (
         <>
@@ -21,7 +21,7 @@ export function GameGrid() {
             { error && <text>{error}</text>}
             <div
                 className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 sm:gap-1 md:gap-1 lg:gap-1 xl:gap-1">
-                {games.map((gameItem) => {
+                {data.map((gameItem) => {
                     return <GameCardContainer><GameCard game={gameItem}></GameCard></GameCardContainer>
                 })}
             </div>
