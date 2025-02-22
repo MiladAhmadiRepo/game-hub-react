@@ -8,8 +8,8 @@ function  App() {
             {/*First Row with 1 Column (Hidden on Tablet and Smaller Screens) */}
             <div className=" md:block col-span-6 md:col-span-12  " id="nav"><Navbar></Navbar></div>
             {/* Second Row with 2 Columns*/}
-            <div className="col-span-1 md:col-span-2  dark:text-primary   text-primary-dark  hidden  lg:block" id="aside">
-                <GenreList></GenreList>
+            <div className=" ml-3 col-span-1 md:col-span-2 lg:block  dark:text-primary   text-primary-dark  hidden  " id="aside">
+                <GenreList ></GenreList>
             </div>
             <div className="col-span-5 md:col-span-10  dark:text-primary   text-primary-dark  " id="mian">
                 <GameGrid></GameGrid></div>
